@@ -18,7 +18,7 @@ This should be placed within a Threlte `<Canvas />`.
 
 -->
 <script lang="ts">
-  import type { EventListener, WebXRManager, Event as ThreeEvent, XRHandModelFactory, XRControllerModelFactory } from 'three'
+  import type { EventListener, WebXRManager, Event as ThreeEvent } from 'three'
   import type { Snippet } from 'svelte'
   import { useThrelte } from '@threlte/core'
   import {
