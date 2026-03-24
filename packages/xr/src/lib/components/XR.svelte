@@ -32,6 +32,7 @@ This should be placed within a Threlte `<Canvas />`.
   import { setupHeadset } from '../internal/setupHeadset.svelte.js'
   import { setupControllers } from '../internal/setupControllers.js'
   import { setupHands } from '../internal/setupHands.js'
+  import type { XRControllerModelFactory, XRHandModelFactory } from 'three/examples/jsm/Addons.js'
 
   interface Props {
     /**
@@ -64,8 +65,8 @@ This should be placed within a Threlte `<Canvas />`.
 
     /** Called after an XRSession is ended */
     onsessionend?: (event: XRSessionEvent) => void
-    handFactory?: any
-    controllerFactory?: any
+    handFactory?: XRHandModelFactory
+    controllerFactory?: XRControllerModelFactory
 
     /** Called when an XRSession is hidden or unfocused. */
     onvisibilitychange?: (event: XRSessionEvent) => void
