@@ -7,17 +7,17 @@ import { useHandTrackingState } from './useHandTrackingState.js'
 import type { XRHandEvent, XRHandEvents } from '../types.js'
 import { handEvents } from './state.svelte.js'
 
-export const setupHands = (factory: XRHandModelFactory) => {  
+export const setupHands = (factory?: XRHandModelFactory) => {  
   const { xr } = useThrelte().renderer
   const hasHands = useHandTrackingState()
   const handSpaces = [xr.getHand(0), xr.getHand(1)]
-  const map = new Map()
+  const map = new Map()  
 
   handSpaces.forEach((handSpace, index) => {
     map.set(handSpace, {
       hand: handSpace,
       targetRay: xr.getController(index),
-      model: factory.createHandModel(handSpace, 'mesh')
+      model: factory?.createHandModel(handSpace, 'mesh') ?? new XRHandModelFactory().createHandModel(handSpace, 'mesh')
     })
   })
 

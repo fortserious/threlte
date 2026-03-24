@@ -64,8 +64,8 @@ This should be placed within a Threlte `<Canvas />`.
 
     /** Called after an XRSession is ended */
     onsessionend?: (event: XRSessionEvent) => void
-    handFactory?: XRHandModelFactory
-    controllerFactory?: XRControllerModelFactory
+    handFactory?: any
+    controllerFactory?: any
 
     /** Called when an XRSession is hidden or unfocused. */
     onvisibilitychange?: (event: XRSessionEvent) => void

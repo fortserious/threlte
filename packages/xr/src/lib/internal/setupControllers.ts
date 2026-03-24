@@ -7,7 +7,7 @@ import type { XRControllerEvent, XRControllerEvents } from '../types.js'
 import { controllers } from '../hooks/useController.svelte.js'
 import { controllerEvents } from './state.svelte.js'
 
-export const setupControllers = (factory: XRControllerModelFactory) => {  
+export const setupControllers = (factory?: XRControllerModelFactory) => {  
   const { xr } = useThrelte().renderer
   const hasHands = useHandTrackingState()
   const targetRaySpaces = [xr.getController(0), xr.getController(1)]
@@ -17,7 +17,7 @@ export const setupControllers = (factory: XRControllerModelFactory) => {
     indexMap.set(targetRay, {
       targetRay,
       grip: xr.getControllerGrip(index),
-      model: factory.createControllerModel(targetRay)
+      model: factory?.createControllerModel(targetRay) ?? new XRControllerModelFactory().createControllerModel(targetRay)
     })
   })
 
