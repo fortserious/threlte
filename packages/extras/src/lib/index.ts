@@ -16,6 +16,7 @@ export { meshBounds } from './utilities/meshBounds.js'
 // abstractions
 export { default as AnimatedSpriteMaterial } from './components/AnimatedSpriteMaterial/AnimatedSpriteMaterial.svelte'
 export { default as AsciiRenderer } from './components/AsciiRenderer/AsciiRenderer.svelte'
+export { default as BackdropGeometry } from './components/BackdropGeometry/BackdropGeometry.svelte'
 export { default as Decal } from './components/Decal/Decal.svelte'
 export {
   default as CameraControls,
@@ -33,6 +34,7 @@ export { default as Environment } from './components/environment/Environment/Env
 export { default as VirtualEnvironment } from './components/environment/VirtualEnvironment/VirtualEnvironment.svelte'
 export { default as ImageMaterial } from './components/ImageMaterial/ImageMaterial.svelte'
 export { default as Grid } from './components/Grid/Grid.svelte'
+export { default as Bounds } from './components/Bounds/Bounds.svelte'
 export { default as RoundedBoxGeometry } from './components/RoundedBoxGeometry/RoundedBoxGeometry.svelte'
 export { default as TransformControls } from './components/controls/TransformControls/TransformControls.svelte'
 export { default as OrbitControls } from './components/controls/OrbitControls/OrbitControls.svelte'
@@ -41,6 +43,7 @@ export { default as InstancedMesh } from './components/Instancing/InstancedMesh.
 export { default as Instance } from './components/Instancing/Instance.svelte'
 export { default as InstancedMeshes } from './components/Instancing/InstancedMeshes/InstancedMeshes.svelte'
 export { default as SoftShadows } from './components/SoftShadows/SoftShadows.svelte'
+export { default as Sparkles } from './components/Sparkles/Sparkles.svelte'
 export { default as MeshLineGeometry } from './components/MeshLine/MeshLineGeometry.svelte'
 export { default as MeshLineMaterial } from './components/MeshLine/MeshLineMaterial.svelte'
 export { default as PointsMaterial } from './components/PointsMaterial/PointsMaterial.svelte'

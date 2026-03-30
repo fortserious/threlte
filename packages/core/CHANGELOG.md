@@ -1,5 +1,29 @@
 # @threlte/core
 
+## 8.5.4
+
+### Patch Changes
+
+- d9ad8f1: Fix case where `useTask`'s running option would run even if set to false
+
+## 8.5.3
+
+### Patch Changes
+
+- 761ab03: Remove barrel export files
+
+## 8.5.2
+
+### Patch Changes
+
+- 3ef48f4: Fix useCache so that rejected promises are not indefinitely cached
+
+## 8.5.1
+
+### Patch Changes
+
+- da99fff: Run `knip` and prune unused dependencies and exports
+
 ## 8.5.0
 
 ### Minor Changes

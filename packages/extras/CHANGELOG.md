@@ -1,5 +1,54 @@
 # @threlte/extras
 
+## 9.13.3
+
+### Patch Changes
+
+- b41ad7c: Delegate stopImmediatePropagation on synthetic events to the native DOM event, allowing handlers to block camera controls (e.g. OrbitControls) during drags.
+
+## 9.13.2
+
+### Patch Changes
+
+- 9645321: Use correct key granularity for instanced or non instanced objects when deduping interactivity events
+
+## 9.13.1
+
+### Patch Changes
+
+- fe1ac6b: Fix: interactivity duplicate events firing when parent and child are both registered
+- 055abe9: Fix: interactivity did not account for dynamic handler additions
+
+## 9.13.0
+
+### Minor Changes
+
+- 5f4d2b0: Add `<BackdropGeometry>` component
+
+## 9.12.1
+
+### Patch Changes
+
+- da99fff: Run `knip` and prune unused dependencies and exports
+
+## 9.12.0
+
+### Minor Changes
+
+- fdaaa59: port <Bounds> component from drei
+
+## 9.11.0
+
+### Minor Changes
+
+- 1305cab: `<Sparkles>` component ported from drei
+
+## 9.10.0
+
+### Minor Changes
+
+- d2e9cd6: Fix Contact Shadows color reactivity
+
 ## 9.9.0
 
 ### Minor Changes
